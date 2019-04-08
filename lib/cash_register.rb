@@ -8,7 +8,7 @@ class CashRegister
 
   def initialize(discount=0)
     @total = 0
-    @discount = discount.to_i
+    @discount = discount
   end
 
   # def self.total
@@ -25,7 +25,7 @@ class CashRegister
   #  binding.pry
     if self.discount != 0
       binding.pry
-      self.total = self.total * ((100-self.discount.to_i)/100)
+      self.total = self.total * ((100-self.discount)/100).to_i
     #  binding.pry
       "After the discount, the total comes to $#{self.total}."
     else
