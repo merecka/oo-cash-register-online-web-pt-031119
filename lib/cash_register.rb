@@ -29,7 +29,7 @@ class CashRegister
     else
       return "There is no discount to apply."
     end
-    self.total
+  #  self.total
   end
-binding.pry
+
 end
