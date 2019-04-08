@@ -58,7 +58,6 @@ describe 'CashRegister' do
         cash_register_with_discount.add_item("macbook air", 1000)
         expect{cash_register_with_discount.apply_discount}.to change{cash_register_with_discount.total}.by(-200)
       end
-      binding.pry
     end
 
     context 'the cash register was not initialized with an employee discount' do
