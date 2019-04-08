@@ -25,7 +25,7 @@ class CashRegister
     if self.discount != 0
       self.total = self.total * ((100-self.discount)/100)
     #  binding.pry
-      "After the discount, the total comes to $#{@@total}."
+      "After the discount, the total comes to $#{self.total}."
     else
       "There is no discount to apply."
     end
