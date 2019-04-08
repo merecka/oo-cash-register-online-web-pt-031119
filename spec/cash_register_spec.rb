@@ -53,7 +53,7 @@ describe 'CashRegister' do
         expect(cash_register_with_discount.apply_discount).to eq("After the discount, the total comes to $800.")
       end
 
-      bi
+      binding.pry
       it 'reduces the total' do
         cash_register.total = 0
         cash_register_with_discount.add_item("macbook air", 1000)
