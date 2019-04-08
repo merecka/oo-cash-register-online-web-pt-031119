@@ -2,8 +2,6 @@ require 'pry'
 
 class CashRegister
 
-#  @@total_bill = nil
-
   attr_accessor :total, :discount, :price, :quantity, :items, :last_price
 
   def initialize(discount=0)
@@ -11,10 +9,6 @@ class CashRegister
     @discount = discount.to_f
     @items = []
   end
-
-  # def self.total
-  #   @@total_bill
-  # end
 
   def add_item(item, price, quantity=1)
     quantity.times {self.items << item}
