@@ -4,7 +4,7 @@ class CashRegister
 
 #  @@total_bill = nil
 
-  attr_accessor :total, :discount, :price, :quantity
+  attr_accessor :total, :discount, :price, :quantity, :items
 
   def initialize(discount=0)
     @total = 0.to_f
@@ -16,6 +16,7 @@ class CashRegister
   # end
 
   def add_item(item, price, quantity=1)
+    self.items << item
     self.total = self.total + (price * quantity)
   #  binding.pry
   end
