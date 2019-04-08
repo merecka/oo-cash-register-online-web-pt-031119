@@ -22,17 +22,13 @@ class CashRegister
 
 #  binding.pry
   def apply_discount
-  #  binding.pry
     if self.discount != 0
-      perc_disc = ((100-self.discount)/100).to_f
-  #    binding.pry
+      perc_disc = ((100-self.discount)/100)
       self.total = self.total * perc_disc
-    #  binding.pry
       return "After the discount, the total comes to $#{self.total.to_i}."
     else
       return "There is no discount to apply."
     end
-#    binding.pry
     self.total
   end
 
