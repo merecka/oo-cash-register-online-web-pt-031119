@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-  @@total_bill = nil
+#  @@total_bill = nil
 
   attr_accessor :total, :discount, :price, :quantity
 
@@ -11,9 +11,9 @@ class CashRegister
     @discount = discount
   end
 
-  def self.total
-    @@total_bill
-  end
+  # def self.total
+  #   @@total_bill
+  # end
 
   def add_item(item, price, quantity=1)
     self.total += (price * quantity)
