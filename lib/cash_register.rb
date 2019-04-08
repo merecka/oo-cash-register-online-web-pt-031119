@@ -31,5 +31,5 @@ class CashRegister
     end
     self.total
   end
-
+binding.pry
 end
