@@ -25,7 +25,7 @@ class CashRegister
     if self.discount != 0
       perc_disc = ((100-self.discount)/100)
       self.total = self.total * perc_disc
-      return "After the discount, the total comes to $#{self.total}."
+      return "After the discount, the total comes to $#{self.total.to_i}."
     else
       return "There is no discount to apply."
     end
