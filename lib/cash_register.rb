@@ -30,7 +30,7 @@ class CashRegister
       "There is no discount to apply."
     end
 #    binding.pry
-    @total
+    self.total
   end
 
 end
